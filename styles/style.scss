@@ -437,7 +437,6 @@ header{
   color: whitesmoke;
   align-self: center;
   margin-right: 8%;
-
 }
 
 
@@ -649,8 +648,8 @@ main{
 @media (max-width: 576px){
   .d-sm-block {
     display: block!important;
-}
-.carousel{
+  }
+  .carousel{
   margin-top: -180px;
-}
+  }
 }
