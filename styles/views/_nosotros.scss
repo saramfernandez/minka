@@ -1,0 +1,38 @@
+//NOSOTROS
+
+.team-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+     "fotoSM tittle"
+     "fotoSM description";
+  width: 80%;
+  justify-items: center;
+  padding: 20px;
+  margin: 20px auto 50px;
+  background-color: $softPink;
+}
+
+.fotoSM {
+  grid-area: fotoSM;
+
+}
+
+.tittle {
+  grid-area: tittle;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+}
+
+.description {
+  grid-area: description;
+  text-align: center;
+}
+
+
+
+

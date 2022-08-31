@@ -1,0 +1,35 @@
+
+//ANIMATION
+
+.fade-in-bottom {
+	animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-bottom-f {
+	animation: fade-in-bottom-f 2s backwards;
+}
+
+
+@keyframes fade-in-bottom-f {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,148 @@
+//MEDIA QUERIES
+@media screen and (max-width: 900px),
+(max-width: 480px){
+
+  .navbar{
+    z-index: 0;
+
+    .nav-bottom{
+      a{
+          text-align: right;
+    }
+  }}
+
+  .navbar-brand{
+    z-index: 1;
+  }
+
+  .navbar-collapse{
+    background-color: #592f56;
+  }
+
+  .container-fluid{
+    padding: 0;
+  }
+  .cv {
+    height: 300px;
+    background-size: 100%;
+    justify-content: center;
+    background-position-y: 250px;
+ }
+
+ .cv-text {
+    text-align: center;
+    align-self: center;
+    margin-right: 0%;
+
+ }
+}
+
+@media screen and (max-width: 480px){
+
+  .contact-form{
+    grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "form"
+    "social-media"
+    ;
+  }
+
+  .social-media { 
+    flex-direction: row;
+    justify-content: center;
+   
+
+    .visible{
+      display: none;
+    }
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .box__service {
+    width: 100%;
+ }
+
+ .team-box {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.4fr 0.8fr;
+  gap: 10px 0px;
+  grid-auto-flow: column;
+  grid-template-areas:
+     "fotoSM"
+     "tittle"
+     "description";
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+ 
+.busquedas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr 0.5fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+     "search_logo"
+     "search_line"
+     "search_title"
+     "search_description"
+     "search_button";
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  border-style: none none solid none;
+  border-color: #16768c74;
+  padding: 20px;
+}
+.large-box {
+  border-style: none none solid none;
+  width: 40%;
+  align-self: center;
+
+}
+.search_line {
+  justify-self: center;
+}
+  
+main{
+  margin-top: 180px;
+
+}
+
+  .carousel-item{
+    height: 500px;
+  }
+
+}
+
+
+@media screen and (max-width: 990px) and (min-width:480px) {
+
+  .boxes {
+     flex-wrap: wrap;
+  }
+
+  .box__service {
+     width: 40%;
+  }
+
+  .busquedas {
+     width: 100%;
+  }
+}
+
+@media (max-width: 576px){
+  .d-sm-block {
+    display: block!important;
+}
+.carousel{
+  margin-top: -180px;
+}
+}

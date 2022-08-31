@@ -1,0 +1,27 @@
+// BOX-SERVICES
+.services-search {
+  width: 85%;
+  display: block;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.box__service {
+  width: 25%;
+  background-color: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+}
+
+.box__service:hover {
+
+  outline: 3px inset $dkVioletOpacity;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

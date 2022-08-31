@@ -1,0 +1,62 @@
+// BÚSQUEDAS 
+.busquedas {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+     "search_logo search_line search_title"
+     "search_logo search_line search_description"
+     "search_logo search_line search_button";
+  width: 60%;
+  margin: 30px auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.search_logo {
+  grid-area: search_logo;
+  align-self: center;
+}
+
+.search_line {
+  grid-area: search_line;
+  height: 75%;
+  align-self: center;
+}
+
+.search_title {
+  grid-area: search_title;
+  align-self: center;
+}
+
+.search_description {
+  grid-area: search_description;
+}
+
+.search_button {
+  grid-area: search_button;
+}
+
+.button_postularse {
+  height: 45px;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $peach;
+  border: 1px outset $peach;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.large-box {
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: $peach;
+}

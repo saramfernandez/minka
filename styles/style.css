@@ -1,10 +1,12 @@
-@charset "UTF-8";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-/*GENERAL*/
 * {
   margin: 0px;
   padding: 0px; }
+
+main {
+  margin-top: 150px;
+  margin-bottom: 50px; }
 
 ul {
   list-style: none; }
@@ -18,10 +20,6 @@ ul {
 
 a:link {
   text-decoration: none; }
-
-main {
-  margin-top: 150px;
-  margin-bottom: 50px; }
 
 header {
   display: flex;
@@ -96,14 +94,14 @@ header {
     border: none;
     box-shadow: none; }
 
+.footer a {
+  --bs-text-opacity: 1;
+  color: #787878; }
+
 .img__footer {
   border-radius: 50%;
   width: 50%;
   border: 15px solid white; }
-
-.footer a {
-  --bs-text-opacity: 1;
-  color: #6c757d; }
 
 .fa {
   padding: 20px;
@@ -111,7 +109,7 @@ header {
   width: 30px;
   text-align: center; }
   .fa:hover {
-    color: #D9806C; }
+    color: #f2b999; }
 
 .mini-icon {
   padding: 0px;
@@ -133,11 +131,11 @@ header {
   grid-template-areas: "social-media form";
   width: 80%;
   margin: auto;
-  box-shadow: 0px 0px 15px 4px rgba(67, 67, 67, 0.24); }
+  box-shadow: 0px 0px 15px 4px #eeeeee; }
 
 .social-media {
   grid-area: social-media;
-  background-color: #D9806C;
+  background-color: #d9756c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,14 +147,6 @@ header {
     color: #f2d6a2; }
   .social-media .sm-item {
     display: block; }
-
-.carousel {
-  margin-top: -150px; }
-
-.carousel-item {
-  background-color: #592f56;
-  width: 100%;
-  height: 400px; }
 
 .form {
   grid-area: form;
@@ -197,11 +187,11 @@ header {
     .form textarea::-webkit-textarea-placeholder {
       color: #a8a8a8; }
   .form .required {
-    color: #f26d85;
-    text-shadow: 0px 0px 5px #2499a6; }
+    color: #f2b999;
+    text-shadow: 0px 0px 5px #787878; }
   .form .aviso {
     font-size: 13px;
-    color: #0e0e0e; }
+    color: black; }
   .form .button_enviar {
     height: 45px;
     width: 100%;
@@ -216,6 +206,14 @@ header {
     align-items: center; }
     .form .button_enviar p {
       margin-bottom: 0px; }
+
+.carousel {
+  margin-top: -150px; }
+
+.carousel-item {
+  background-color: #592f56;
+  width: 100%;
+  height: 400px; }
 
 .team-box {
   display: grid;
@@ -242,10 +240,6 @@ header {
 .description {
   grid-area: description;
   text-align: center; }
-
-.subtitle {
-  font-size: 25px;
-  color: #d98b79; }
 
 .fade-in-bottom {
   animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
@@ -284,14 +278,13 @@ header {
   margin: 15px; }
 
 .box__service:hover {
-  outline: 3px inset #592f56; }
+  outline: 3px inset rgba(89, 47, 86, 0.7); }
 
 .boxes {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-/* TIPS */
 .cv {
   margin: 30px auto;
   font-size: 30px;
@@ -314,7 +307,6 @@ header {
   align-self: center;
   margin-right: 8%; }
 
-/* BÚSQUEDAS */
 .busquedas {
   display: grid;
   grid-template-columns: 1fr 0.2fr 3fr;

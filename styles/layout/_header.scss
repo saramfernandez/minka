@@ -1,0 +1,18 @@
+// HEADER
+
+header{
+  display: flex;
+  position: fixed; 
+  height: 105px;
+  width: 100%;
+  top: 0;
+  background-color: $dkVioletOpacity ;
+  z-index: 1000;
+  
+  .header__img {
+    border: 15px solid white;
+    border-radius: 50%;
+    height: 10pc;
+    margin: 0px 50px;
+  }
+}

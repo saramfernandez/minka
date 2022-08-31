@@ -1,0 +1,120 @@
+// CONTACT
+
+.contact-form {  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "social-media form";
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 0px 15px 4px $ultraLigthGray;
+}
+
+.social-media { 
+  grid-area: social-media; 
+  background-color: $peach;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    --bs-text-opacity: 1;
+    color: black;
+  }
+
+  .fa{
+    &:hover{  
+      color: $softYellow;
+  }
+  }
+  .sm-item{
+    display: block;
+  }
+
+}
+
+.form { 
+  
+  grid-area: form;
+  margin: 20px;
+  width: 80%;
+  justify-self: center;
+  
+  input {
+    display: block;
+    margin: auto;
+    background-color: #fbfbfb;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $peachOpacity;
+    margin-top: 20px;
+    padding-left: 10px;
+
+    &:focus-visible {
+      outline: 2px solid $peach;    }
+    &::-webkit-input-placeholder {
+      color: $uSoftGray;
+    }
+  }
+  
+  textarea {
+    display: block;
+    margin: auto;
+    background-color: #fbfbfb;
+    width: 90%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $peachOpacity;
+    margin-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+
+    &:focus {
+      outline: 2px solid $peach;
+
+    }
+    
+    &::-webkit-textarea-placeholder {
+      color: $uSoftGray;
+    }
+  }
+ 
+
+  .required {
+    color: $lgYellow;
+    text-shadow: 0px 0px 5px $softGray;
+  }
+  
+  .aviso {
+    font-size: 13px;
+    color: black;
+  }
+
+  .button_enviar {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $peach;
+    border: $peach outset;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+
+    p{
+      margin-bottom: 0px;
+    }
+ }
+
+
+}
