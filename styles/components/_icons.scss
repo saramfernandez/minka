@@ -5,7 +5,7 @@
     text-align: center;
   
     &:hover{  
-        color: $lgYellow;
+        color: map-get($yellow, soft );
     }
   }
   

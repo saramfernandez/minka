@@ -15,7 +15,7 @@
     display: block;
     position: relative;
     padding: 20px;
-    color: $ultraLigthGray;
+    color: map-get($gray, ultraLigth );
     font-size: 16px;
     text-align: center;
     margin-right: 30px;
@@ -46,9 +46,12 @@
   justify-content: flex-end;
 }
 
-.nav-link:focus, .nav-link:hover{
-  color: $softYellow;
+.nav-link{
+  &:focus,&:hover{
+    color: map-get($yellow , soft );
+  }
 }
+
 
 .navbar-nav .nav-link.active{
   color: white;
@@ -58,6 +61,7 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 .container-fluid{
   height: 100%;
 }

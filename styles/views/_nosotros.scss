@@ -1,6 +1,7 @@
 //NOSOTROS
 
 .team-box {
+  @include padMar(20px,20px auto 50px);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
@@ -11,9 +12,7 @@
      "fotoSM description";
   width: 80%;
   justify-items: center;
-  padding: 20px;
-  margin: 20px auto 50px;
-  background-color: $softPink;
+  background-color: map-get($pink , soft );
 }
 
 .fotoSM {

@@ -7,21 +7,20 @@
   text-align: center;
 }
 
-.box__service {
-  width: 25%;
-  background-color: none;
-  display: inline-block;
-  padding: 10px;
-  margin: 15px;
-}
-
-.box__service:hover {
-
-  outline: 3px inset $dkVioletOpacity;
-}
-
 .boxes {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.box__service {
+  @include padMar(10px,15px);
+  width: 25%;
+  background-color: none;
+  display: inline-block;
+
+  &:hover{
+    outline: 3px inset map-get($violet , opacity );
+  }
+}
+

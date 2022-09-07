@@ -9,12 +9,12 @@
     "social-media form";
   width: 80%;
   margin: auto;
-  box-shadow: 0px 0px 15px 4px $ultraLigthGray;
+  box-shadow: 0px 0px 15px 4px map-get($gray , ultraLigth );
 }
 
 .social-media { 
   grid-area: social-media; 
-  background-color: $peach;
+  background-color: map-get($peach , normal );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,11 +25,6 @@
     color: black;
   }
 
-  .fa{
-    &:hover{  
-      color: $softYellow;
-  }
-  }
   .sm-item{
     display: block;
   }
@@ -44,22 +39,19 @@
   justify-self: center;
   
   input {
+    @include size(90%,40px);
     display: block;
     margin: auto;
     background-color: #fbfbfb;
-    width: 90%;
-    height: 40px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $peachOpacity;
+    border-radius: 5px ;
     margin-top: 20px;
+    border: 1px solid map-get($peach, opacity);
     padding-left: 10px;
 
     &:focus-visible {
-      outline: 2px solid $peach;    }
+      outline: 2px solid map-get($peach , normal );    }
     &::-webkit-input-placeholder {
-      color: $uSoftGray;
+      color: map-get($gray , soft );
     }
   }
   
@@ -71,26 +63,26 @@
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: $peachOpacity;
+    border-color: map-get($peach, opacity);
     margin-top: 20px;
     padding-left: 10px;
     margin-bottom: 20px;
     padding-top: 15px;
 
     &:focus {
-      outline: 2px solid $peach;
+      outline: 2px solid map-get($peach , normal );
 
     }
     
     &::-webkit-textarea-placeholder {
-      color: $uSoftGray;
+      color: map-get($gray , light );
     }
   }
  
 
   .required {
-    color: $lgYellow;
-    text-shadow: 0px 0px 5px $softGray;
+    color: map-get($yellow , light );
+    text-shadow: 0px 0px 5px map-get($gray , soft );
   }
   
   .aviso {
@@ -99,21 +91,10 @@
   }
 
   .button_enviar {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 20px;
-    color: whitesmoke;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: $peach;
-    border: $peach outset;
-    border-radius: 10px;
-    cursor: pointer;
-    align-items: center;
-
-    p{
-      margin-bottom: 0px;
-    }
+    @include size(100%,45px);
+    @extend %button;
+    background-color: map-get($peach , normal );
+    border: map-get($peach , normal ) outset;
  }
 
 

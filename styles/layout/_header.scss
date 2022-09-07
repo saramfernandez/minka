@@ -1,12 +1,11 @@
 // HEADER
 
 header{
+  @include size(100%,105px);
   display: flex;
   position: fixed; 
-  height: 105px;
-  width: 100%;
   top: 0;
-  background-color: $dkVioletOpacity ;
+  background-color: map-get($violet, opacity ) ;
   z-index: 1000;
   
   .header__img {
@@ -15,4 +14,16 @@ header{
     height: 10pc;
     margin: 0px 50px;
   }
+}
+
+.h-Peach{
+  background-color: map-get($peach, opacity);
+}
+
+.h-Pink{
+  background-color: map-get($pink , opacity);
+}
+
+.h-Yellow{
+  background-color: map-get($yellow, opacity );
 }

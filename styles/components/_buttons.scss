@@ -1,0 +1,7 @@
+%button{
+    @include padMar(10px,20px);
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}

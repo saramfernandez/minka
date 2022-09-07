@@ -1,13 +1,12 @@
 // TIPS 
 
 .cv {
-  margin: 30px auto;
+  @include padMar(20px,30px auto);
   font-size: 30px;
   height: 300px;
   display: flex;
   justify-self: center;
-  background-color: $dkGray;
-  padding: 20px;
+  background-color: map-get($gray,dark);
   background-image: url(../assets/image/cv-image.jpg);
   background-size: 65%;
   background-repeat: no-repeat;

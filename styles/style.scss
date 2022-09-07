@@ -1,10 +1,12 @@
 @import './utilities/variables';
+@import './utilities/mixins';
 @import './base/typo';
 @import './base/reset';
+@import './components/icons';
+@import './components/buttons';
 @import './layout/header';
 @import './layout/navigation';
 @import './layout/footer';
-@import './components/icons';
 @import './views/contact';
 @import './components/carousel';
 @import './views/nosotros';
