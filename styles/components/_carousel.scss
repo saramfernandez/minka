@@ -5,6 +5,8 @@
 }
 
 .carousel-item{
-  @include size(100%,400px);
+  @include size(100%,40vh);
+  // height: 10vw;
   background-color: map-get($violet , dark );
+  
 }

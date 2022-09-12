@@ -48,6 +48,12 @@
     margin-right: 0%;
 
  }
+
+ .minka{
+  width: 80%;
+  margin: 10%;
+ }
+ 
 }
 
 @media screen and (max-width: 480px){
@@ -128,10 +134,6 @@ main{
 
 }
 
-  .carousel-item{
-    height: 500px;
-  }
-
 }
 
 
@@ -146,7 +148,8 @@ main{
   }
 
   .busquedas {
-     width: 100%;
+    width: 90%;
+    margin: 30px auto;
   }
 }
 
