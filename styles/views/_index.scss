@@ -1,4 +1,25 @@
 
+  .about-minka{
+    @include size(100%,500px);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .index_img{
+      @include size(100%,100%);
+      background-image: linear-gradient(
+        map-get($violet,opacity),
+        map-get($violet,opacity)
+      ), url(../assets/image/herramientas-de-gestion-de-recursos-humanos.png);
+      background-position: center;
+      background-size: cover;
+      
+  }
+  
+  }
+
+  
   .minka{
     @include size(30%, 400px);
     background: whitesmoke;
