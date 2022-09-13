@@ -1,0 +1,29 @@
+
+  .minka{
+    @include size(30%, 400px);
+    background: whitesmoke;
+    margin-right: 50px;
+    position:absolute;
+    padding: 50px;
+    mix-blend-mode:screen;
+
+    h1{
+      font-weight: bold;
+    }
+
+    p{
+      font-size: 22px;
+    }
+  }
+  
+  .quote{
+    width: 60%;
+    margin: 60px auto;
+
+    h2{
+      font-size: 40px
+    };
+    p{
+      font-size: 20px;
+    }
+  }
