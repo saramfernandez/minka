@@ -11,9 +11,7 @@
     }
   }}
 
-  .navbar-brand{
-    z-index: 1;
-  }
+  
 
   .nc-Home{
     background-color: map-get($violet , dark );
@@ -54,6 +52,9 @@
   margin: 10%;
  }
  
+ .services-expand{
+  width: 85%;
+ }
 }
 
 @media screen and (max-width: 480px){

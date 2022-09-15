@@ -1,26 +1,31 @@
 // BOX-SERVICES
-.services-search {
+.services-index {
   width: 85%;
-  display: block;
-  align-items: center;
   margin: auto;
   text-align: center;
+  margin-top: 50px;
+}
+.services-expand{
+  width: 70%;
+  margin: auto;
+}
+.service-item{
+   scroll-margin-top: 150px;
 }
 
 .boxes {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .box__service {
   @include padMar(10px,15px);
   width: 25%;
-  background-color: none;
-  display: inline-block;
-
+  color: black;
+  
   &:hover{
     outline: 3px inset map-get($violet , opacity );
+    color: map-get($violet , dark );
   }
 }
 
