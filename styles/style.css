@@ -184,7 +184,7 @@ header {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "social-media form";
-  width: 80%;
+  width: 70%;
   margin: auto;
   box-shadow: 0px 0px 15px 4px whitesmoke; }
 
@@ -333,10 +333,10 @@ header {
   padding: 20px;
   margin: 30px auto;
   font-size: 30px;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-self: center;
-  background-color: #393939;
+  background-color: #592f56;
   background-image: url(../assets/image/cv-image.png);
   background-size: 65%;
   background-repeat: no-repeat;
@@ -349,7 +349,8 @@ header {
   font-size: 40px;
   color: whitesmoke;
   align-self: center;
-  margin-right: 8%; }
+  margin-right: 8%;
+  font-weight: bold; }
 
 .busquedas {
   display: grid;
