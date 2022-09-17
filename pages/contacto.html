@@ -73,24 +73,24 @@
                     <i class="fa fa-linkedin"></i>
                 </a>
             </div>
-            <form action="" method="get" class="form">
+            <form action="mailto:minkarrhh@mail.com?subject=Formulario de contacto" method="post" enctype="text/plain" class="form">
                 <h1 class="display-6">CONTACTANOS</h1>
                 <div>
-                    <input type="text" placeholder="NOMBRE*" id="nombre" required />
+                    <input name="NOMBRE" type="text" placeholder="NOMBRE*" id="nombre" required />
                 </div>
                 <div>
-                    <input type="tel" placeholder="TELÉFONO" id="telefono" />
+                    <input name="TELEFONO" type="tel" placeholder="TELÉFONO" id="telefono" />
                 </div>
                 <div>
-                    <input type="email" id="mail" placeholder="MAIL" required />
+                    <input name="MAIL" type="email" id="mail" placeholder="MAIL*" required />
                 </div>
                 <div>
-                    <input type="text" placeholder="ASUNTO*" id="asunto" required />
+                    <input name="ASUNTO" type="text" placeholder="ASUNTO*" id="asunto" required />
                 </div>
                 <div>
-                    <textarea name="introducir_mensaje" placeholder="DEJA AQUÍ TU COMENTARIO...*" required></textarea>
+                    <textarea name="MENSAJE" placeholder="DEJA AQUÍ TU COMENTARIO...*" required></textarea>
                 </div>
-                <button class="button_enviar" type="submit" name="enviar_formulario" id="enviar">
+                <button class="button_enviar" type="submit" id="enviar">
                     <p>Enviar</p>
                 </button>
                 <p class="aviso">
