@@ -141,25 +141,20 @@ header {
 
 .about-minka {
   width: 100%;
-  height: 500px;
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: end; }
-  .about-minka .index_img {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(89, 47, 86, 0.9), rgba(89, 47, 86, 0.9)), url(../assets/image/herramientas-de-gestion-de-recursos-humanos.png);
-    background-position: center;
-    background-size: cover; }
+  justify-content: end;
+  background-image: linear-gradient(rgba(89, 47, 86, 0.9), rgba(89, 47, 86, 0.9)), url(../assets/image/herramientas-de-gestion-de-recursos-humanos.png);
+  background-position: center;
+  background-size: cover; }
 
 .minka {
-  width: 30%;
-  height: 400px;
-  background: whitesmoke;
-  margin-right: 50px;
-  position: absolute;
   padding: 50px;
+  margin: 40px;
+  width: 30%;
+  height: auto;
+  background: whitesmoke;
   mix-blend-mode: screen; }
   .minka h1 {
     font-weight: bold; }
@@ -257,17 +252,19 @@ header {
   margin: 20px auto 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  grid-template-rows: auto auto;
   grid-auto-flow: row;
   grid-template-areas: "foto tittle" "foto description";
-  width: 80%;
+  width: 60%;
   justify-items: center;
-  background-color: #a6687f; }
+  background-color: rgba(166, 104, 127, 0.9); }
+  .team-box a {
+    color: white; }
 
 .foto {
   grid-area: foto;
-  width: 100%; }
+  width: 100%;
+  align-self: center; }
 
 .tittle {
   grid-area: tittle;
@@ -278,6 +275,32 @@ header {
 .description {
   grid-area: description;
   text-align: center; }
+
+.mvv-about {
+  width: 100%;
+  justify-content: center;
+  background-color: #a6687f;
+  background-position: center;
+  background-size: cover; }
+
+.mvv-minka {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "mision vision valores";
+  margin: auto;
+  padding: 40px 0px; }
+  .mvv-minka div {
+    background: whitesmoke;
+    mix-blend-mode: screen;
+    padding: 20px;
+    text-align: center; }
+    .mvv-minka div h1 {
+      font-weight: bold; }
+    .mvv-minka div p {
+      font-size: 18px; }
 
 .fade-in-bottom {
   animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
@@ -322,47 +345,29 @@ header {
   padding: 10px;
   margin: 15px;
   width: 25%;
-  color: black; }
-  .box__service:hover {
-    outline: 3px inset rgba(89, 47, 86, 0.9);
-    color: #592f56; }
-
-.mvv-about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 50px; }
-
-.mvv-card {
-  width: 100%;
-  height: 150px;
-  border-radius: 4px;
-  background: #fff;
-  padding: 14px 80px 18px 36px;
-  cursor: pointer; }
-
-.mvv-card h3 {
-  font-weight: 600; }
-
-.mvv-card {
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto 100%; }
-
-.mision {
-  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-mision-empresarial_114360-7435.jpg); }
-
-.vision {
-  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-vision-empresarial_114360-7210.jpg); }
-
-.valores {
-  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-solidaridad_114360-6236.jpg); }
-
-@media (max-width: 990px) {
-  .mvv-card {
-    margin: 20px; } }
+  color: black;
+  z-index: 0;
+  overflow: hidden; }
+  .box__service:hover p {
+    transition: all 0.3s ease-out;
+    color: white; }
+  .box__service:hover h4 {
+    transition: all 0.3s ease-out;
+    color: white; }
+  .box__service:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -32px;
+    right: -32px;
+    background: rgba(89, 47, 86, 0.9);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transition: transform 0.6s ease-out; }
+  .box__service:hover:before {
+    transform: scale(30); }
 
 .cv {
   padding: 20px;
@@ -396,7 +401,7 @@ header {
   grid-auto-flow: row;
   grid-template-areas: "search_logo search_line search_title" "search_logo search_line search_description" "search_logo search_line search_button";
   width: 80%;
-  margin: 30px;
+  margin: 30px auto;
   text-align: center;
   justify-items: center; }
 
@@ -468,8 +473,8 @@ header {
     text-align: center;
     justify-items: center;
     align-items: center; }
-  .foto {
-    width: 50%; } }
+  .mvv-minka {
+    flex-direction: column; } }
 
 @media screen and (max-width: 480px) {
   .contact-form {
@@ -486,8 +491,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .box__service {
-    width: 100%; }
   .busquedas {
     padding: 20px;
     margin: 20px auto;
@@ -507,9 +510,7 @@ header {
   .search_line {
     justify-self: center; }
   main {
-    margin-top: 180px; }
-  .reference {
-    top: -200px; } }
+    margin-top: 180px; } }
 
 @media screen and (max-width: 990px) and (min-width: 480px) {
   .boxes {
@@ -518,13 +519,21 @@ header {
     width: 40%; }
   .busquedas {
     width: 90%;
-    margin: 30px auto; } }
+    margin: 30px auto; }
+  .team-box {
+    width: 50%; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .d-sm-block {
     display: block !important; }
   .carousel {
-    margin-top: -180px; } }
+    margin-top: -180px; }
+  .box__service {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .reverse {
+    flex-direction: column-reverse; } }
 
 .center {
   display: flex;

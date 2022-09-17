@@ -68,8 +68,8 @@
     align-items: center;
   }
 
-  .foto{
-    width: 50%;
+  .mvv-minka{
+    flex-direction: column;
   }
 }
 
@@ -77,11 +77,10 @@
 
   .contact-form{
     grid-template-columns: 1fr;
-  grid-template-rows: 3fr 1fr;
-  grid-template-areas:
-  "form"
-    "social-media"
-    ;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+    "form"
+    "social-media";
   }
 
   .social-media { 
@@ -101,47 +100,38 @@
     justify-content: center;
  }
 
- .box__service {
-    width: 100%;
- }
-
-
  
-.busquedas {
-  @include padMar(20px,20px auto);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.2fr 1fr auto 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-     "search_logo"
-     "search_line"
-     "search_title"
-     "search_description"
-     "search_button";
-  width: 80%;
-  text-align: center;
-  border-style: none none solid none;
-  border-color: #16768c74;
-}
-.large-box {
-  border-style: none none solid none;
-  width: 40%;
-  align-self: center;
+  .busquedas {
+    @include padMar(20px,20px auto);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr auto 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "search_logo"
+      "search_line"
+      "search_title"
+      "search_description"
+      "search_button";
+    width: 80%;
+    text-align: center;
+    border-style: none none solid none;
+    border-color: #16768c74;
+  }
+  .large-box {
+    border-style: none none solid none;
+    width: 40%;
+    align-self: center;
 
-}
-.search_line {
-  justify-self: center;
-}
-  
-main{
-  margin-top: 180px;
+  }
+  .search_line {
+    justify-self: center;
+  }
+    
+  main{
+    margin-top: 180px;
 
-}
-
-.reference{
-  top: -200px;
-}
+  }
 
 }
 
@@ -160,13 +150,28 @@ main{
     width: 90%;
     margin: 30px auto;
   }
+
+  .team-box{
+    width: 50%;
+  }
+
 }
 
-@media (max-width: 576px){
+@media screen and (max-width: 576px){
   .d-sm-block {
     display: block!important;
+  }
+  .carousel{
+    margin-top: -180px;
+  }
+
+  .box__service {
+    width: 100%;
+  }
 }
-.carousel{
-  margin-top: -180px;
-}
+
+@media screen and (max-width: 768px){
+  .reverse{
+    flex-direction: column-reverse;
+  }
 }
