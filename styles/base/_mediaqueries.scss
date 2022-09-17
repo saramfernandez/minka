@@ -69,8 +69,25 @@
   }
 
   .mvv-minka{
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+       "mision"
+       "vision"
+       "valores";
+  }  
+
+  .advices {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "advice_des"
+      "advices_list";
   }
+
 }
 
 @media screen and (max-width: 480px){
@@ -81,6 +98,7 @@
     grid-template-areas:
     "form"
     "social-media";
+    width: 90%;
   }
 
   .social-media { 
@@ -133,6 +151,9 @@
 
   }
 
+  .quote{
+    width: 70%;
+  }
 }
 
 
