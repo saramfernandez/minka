@@ -507,7 +507,9 @@ header {
   .search_line {
     justify-self: center; }
   main {
-    margin-top: 180px; } }
+    margin-top: 180px; }
+  .reference {
+    top: -200px; } }
 
 @media screen and (max-width: 990px) and (min-width: 480px) {
   .boxes {
