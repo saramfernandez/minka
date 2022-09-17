@@ -1,0 +1,29 @@
+.advices {  display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "advice_des advices_list";
+    width: 80%;
+    margin: auto;
+}
+  
+.advice_des { 
+    grid-area: advice_des; 
+    text-align: center;
+    background-color: map-get($yellow, midiumDark );
+    padding: 30px;
+    font-size: 18px;
+}
+  
+.advices_list {
+    grid-area: advices_list; 
+    padding: 30px;
+    font-size: 16px;
+
+    ol li{
+        margin: 10px;
+    }
+}
+  
