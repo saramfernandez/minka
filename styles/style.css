@@ -21,9 +21,6 @@ ul {
 a:link {
   text-decoration: none; }
 
-html {
-  scroll-behavior: smooth; }
-
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -263,13 +260,14 @@ header {
   grid-template-rows: 1fr 1fr;
   gap: 30px;
   grid-auto-flow: row;
-  grid-template-areas: "fotoSM tittle" "fotoSM description";
+  grid-template-areas: "foto tittle" "foto description";
   width: 80%;
   justify-items: center;
   background-color: #a6687f; }
 
-.fotoSM {
-  grid-area: fotoSM; }
+.foto {
+  grid-area: foto;
+  width: 100%; }
 
 .tittle {
   grid-area: tittle;
@@ -328,6 +326,43 @@ header {
   .box__service:hover {
     outline: 3px inset rgba(89, 47, 86, 0.9);
     color: #592f56; }
+
+.mvv-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px; }
+
+.mvv-card {
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 14px 80px 18px 36px;
+  cursor: pointer; }
+
+.mvv-card h3 {
+  font-weight: 600; }
+
+.mvv-card {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%; }
+
+.mision {
+  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-mision-empresarial_114360-7435.jpg); }
+
+.vision {
+  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-vision-empresarial_114360-7210.jpg); }
+
+.valores {
+  background-image: linear-gradient(90deg, transparent, rgba(166, 104, 127, 0.5)), url(https://img.freepik.com/vector-gratis/ilustracion-concepto-solidaridad_114360-6236.jpg); }
+
+@media (max-width: 990px) {
+  .mvv-card {
+    margin: 20px; } }
 
 .cv {
   padding: 20px;
@@ -423,7 +458,18 @@ header {
     width: 80%;
     margin: 10%; }
   .services-expand {
-    width: 85%; } }
+    width: 85%; }
+  .team-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr auto;
+    gap: 10px 0px;
+    grid-auto-flow: column;
+    grid-template-areas: "foto" "tittle" "description";
+    text-align: center;
+    justify-items: center;
+    align-items: center; }
+  .foto {
+    width: 50%; } }
 
 @media screen and (max-width: 480px) {
   .contact-form {
@@ -442,15 +488,6 @@ header {
     justify-content: center; }
   .box__service {
     width: 100%; }
-  .team-box {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.4fr 0.8fr;
-    gap: 10px 0px;
-    grid-auto-flow: column;
-    grid-template-areas: "fotoSM" "tittle" "description";
-    text-align: center;
-    justify-items: center;
-    align-items: center; }
   .busquedas {
     padding: 20px;
     margin: 20px auto;

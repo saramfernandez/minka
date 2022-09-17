@@ -8,16 +8,16 @@
   gap: 30px;
   grid-auto-flow: row;
   grid-template-areas:
-     "fotoSM tittle"
-     "fotoSM description";
+     "foto tittle"
+     "foto description";
   width: 80%;
   justify-items: center;
   background-color: map-get($pink , soft );
 }
 
-.fotoSM {
-  grid-area: fotoSM;
-
+.foto {
+  grid-area: foto;
+  width: 100%;
 }
 
 .tittle {

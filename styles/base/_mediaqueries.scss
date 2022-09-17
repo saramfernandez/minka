@@ -11,8 +11,6 @@
     }
   }}
 
-  
-
   .nc-Home{
     background-color: map-get($violet , dark );
   }
@@ -55,6 +53,24 @@
  .services-expand{
   width: 85%;
  }
+
+ .team-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr auto;
+    gap: 10px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "foto"
+      "tittle"
+      "description";
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .foto{
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 480px){
@@ -89,19 +105,7 @@
     width: 100%;
  }
 
- .team-box {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.4fr 0.8fr;
-  gap: 10px 0px;
-  grid-auto-flow: column;
-  grid-template-areas:
-     "fotoSM"
-     "tittle"
-     "description";
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-}
+
  
 .busquedas {
   @include padMar(20px,20px auto);
