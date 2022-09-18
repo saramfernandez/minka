@@ -1,6 +1,9 @@
 # MINKA RRHH
 Página web de una consultora de RRHH.
 
+## LINK DE ACCESO A PÁGINA EN EL SERVIDOR
+https://minka-rrrhh.000webhostapp.com/
+
 ## PÁGINAS
 
 #### HOME 
