@@ -25,6 +25,6 @@ En esta página se encuentra una descripción de la consultora y el equipo que l
 
 Se mostrará un formulario de contacto con requisitos opcionales y obligatorios. Al hacer click en el botón ENVIAR se abrira un mail para enviar los detalles cargados.
 
-### TIPS
+#### TIPS
 
 Un articulo con consejos para la búsqueda laboral.
